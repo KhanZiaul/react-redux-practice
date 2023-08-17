@@ -1,5 +1,6 @@
-const { createStore } = require("redux")
+const { createStore, applyMiddleware } = require("redux")
 const { combineReducers } = require("redux")
+const { default: logger } = require("redux-logger")
 
 //  State
 const initialState = {
@@ -34,7 +35,7 @@ const rootReducer = combineReducers({
 })
 
 // Store
-const store = createStore(rootReducer)
+const store = createStore(rootReducer,applyMiddleware(logger))
 
 // Subscribe
 
