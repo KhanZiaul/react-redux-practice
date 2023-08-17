@@ -9,3 +9,10 @@ export const decNumber = () => {
         type: 'DECREMENT'
     }
 }
+
+export const addUser= (user) => {
+    return {
+        type: "ADD_USER",
+        payload:user
+    }
+}
