@@ -5,7 +5,7 @@ const App = () => {
   const mystate = useSelector((state)=> state.changeTheNumber)
   const dispatch = useDispatch()
   return (
-    <div className='h-[100vh] flex justify-center items-center'>
+    <div className='h-[50vh] flex justify-center items-center'>
       <div>
         <h2 className='text-4xl font-semibold mb-4'>Increment/Decrement Counter</h2>
         <p className='text-xl font-semibold text-center'>using react-redux</p>
