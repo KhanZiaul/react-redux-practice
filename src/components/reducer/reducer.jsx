@@ -11,7 +11,7 @@ function changeTheNumber(state = initialState, action) {
         case "ADD_USER": return {
             ...state,
             count: state.count + 1,
-            users: [...state.users, action.user]
+            users: [...state.users, action.payload]
         };
         default: return state;
     }
