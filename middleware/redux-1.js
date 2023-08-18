@@ -1,3 +1,5 @@
+//  REDUX LOGGER ----------------------------------
+
 const { createStore, applyMiddleware } = require("redux")
 const { combineReducers } = require("redux")
 const { default: logger } = require("redux-logger")
